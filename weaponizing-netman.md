@@ -6,7 +6,7 @@
 
 <p>So I thought I will give it a shot and will try to exploit this with his POC. I created malicious DLL:</p>
 
-```C++
+```cpp
 
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "pch.h"
