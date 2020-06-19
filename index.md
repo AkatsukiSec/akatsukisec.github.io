@@ -1,9 +1,4 @@
-# Hello World
+# Random Sec Blog
 
- <h1><a href="/test/">This is test</a></h1>
-</header>
+ <h1><a href="/weaponizing-netman/">Weaponizing NetMan DLL gone wrong?</a></h1>
 
-    <p>testestestestest</p>
-
-
-    <div class="more"><a href="/test/">read more</a></div>
