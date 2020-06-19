@@ -48,3 +48,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 
 <p>I was able to replicate same behavior on Windows Server 2019. The only difference is that in server 2019 after reboot i got NT Authority\System shell when system boots. And of course a shell when user logs in. In Windows Server 2012 this unfortunetely did not work.<p/>
 
+<p>Well, this is a pretty different outcome than what i was going for. Instead of getting local admin triggered on demand, we can collect user shells and go for domain admin, or in case of Server 2019 at least reboot for local admin. I honestly don't know what is  wrong in here cos I'm still pretty unexperienced n00b with Widnows processes and internals.I did read original post many times and followed it exactly.  Maybe some blessed person could clarify this for me .....</p>
+
+<p>I have never used twitter but I just made an account so you can contact me there</p>
+
