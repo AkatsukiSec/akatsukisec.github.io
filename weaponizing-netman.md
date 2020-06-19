@@ -34,9 +34,17 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 
 <H3>Nothing...</H3>
 
-So i though something must be wrong. I executed only powershell payload. It worked. So next step was to verify if trigger really restarts the service and it loads our DLL. Here is output of procmon: 
+<p>So i though something must be wrong. I executed only powershell payload. It worked. So next step was to verify if trigger really restarts the service and it loads our DLL. Here is output of procmon: </p>
 <a href="https://raw.githubusercontent.com/AwokenSec/awokensec.github.io/master/Images/procmon.png">
 <img src="/Images/procmon.png" alt="Procmon">
 </a>
-DLL is loaded with NT Authority / System. But no shell. 
+<p>DLL is loaded with NT Authority\System. But no reverse shell. I was sure my maliciuos DLL is working fine cos i verified with another application. So I went for a reboot and let's try again. When i was logging in again I saw I got a reverse shell in my Kali:</p>
+
+<a href="https://github.com/AwokenSec/awokensec.github.io/blob/master/Images/revshell.PNG?raw=true">
+<img src="/Images/revshell.PNG" alt="revshell">
+</a>
+
+<p>I got a shell everytime a user logs in as him. I did not managed to get the NetManTrigger to work for me. In Procmon i see DLL get loaded but it seems like my code is not executed. I also tried to proxy with original DLL which is present on Windows 10 but got the same result.</p>
+
+<p>I was able to replicate same behavior on Windows Server 2019. The only difference is that in server 2019 after reboot i got NT Authority\System shell when system boots. And of course a shell when user logs in. In Windows Server 2012 this unfortunetely did not work.<p/>
 
