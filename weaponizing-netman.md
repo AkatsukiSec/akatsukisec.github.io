@@ -35,8 +35,8 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 <H3>Nothing...</H3>
 
 So i though something must be wrong. I executed only powershell payload. It worked. So next step was to verify if trigger really restarts the service and it loads our DLL. Here is output of procmon: 
-
+<a href="https://raw.githubusercontent.com/AwokenSec/awokensec.github.io/master/Images/procmon.png">
 <img src="/Images/procmon.png" alt="Procmon">
-
-
+</a>
+DLL is loaded with NT Authority / System. But no shell. 
 
